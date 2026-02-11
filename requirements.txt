@@ -9,7 +9,7 @@ pytz==2023.3
 schedule==1.2.0
 cryptography==41.0.7
 redis==5.0.1
-psycopg2-binary==2.9.9
+asyncpg==0.29.0
 pydantic==2.5.0
 matplotlib==3.8.2
 pillow==10.1.0
