@@ -8,13 +8,13 @@ services:
       - key: BOT_TOKEN
         value: 8335049265:AAGjWzldB1DV6nsdFwMekC_YZsEdtkrlzWc
       - key: DATABASE_URL
-        value: postgresql://user:password@host:5432/dbname
+        value: postgresql://game_results_db_rh8i_user:WcpLWFAKnD7Ezcf9QAnQmYHq6FFXRb2p@dpg-d66de3ggjchc73d6jfjg-a/game_results_db_rh8i
       - key: REDIS_URL
-        value: redis://red-xxxx:6379
+        value: redis://red-d66dgfi48b3s73a4kdo0:6379
       - key: WEBHOOK_HOST
-        value: https://your-bot-name.onrender.com
+        value: https://game-results-bot.onrender.com
       - key: ADMIN_IDS
-        value: "123456789"
+        value: "638593776"
       - key: STEAM_API_KEY
         value: 7DA945B46467DE86A1E0534DCA5F4790
       - key: WOT_APPLICATION_ID
