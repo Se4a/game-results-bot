@@ -1,0 +1,14 @@
+{
+  "welcome_message": "🎮 Bienvenue sur game_results_bot !\n\nJe suis votre entraîneur virtuel qui suit les statistiques de jeu en temps réel et affiche les données historiques avec des marqueurs de croissance/déclin.",
+  "menu": {
+    "csgo": "🎯 CS:GO",
+    "dota": "⚔️ Dota 2",
+    "valorant": "🔫 Valorant",
+    "lol": "🏆 LoL",
+    "wot": "🎖️ World of Tanks",
+    "pubg": "🌍 PUBG",
+    "settings": "⚙️ Paramètres",
+    "subscription": "💎 Abonnement",
+    "donate": "❤️ Don"
+  }
+}

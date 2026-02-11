@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: game-results-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot/main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8335049265:AAGjWzldB1DV6nsdFwMekC_YZsEdtkrlzWc
+      - key: DATABASE_URL
+        value: postgresql://user:password@host:5432/dbname
+      - key: REDIS_URL
+        value: redis://red-xxxx:6379
+      - key: WEBHOOK_HOST
+        value: https://your-bot-name.onrender.com
+      - key: ADMIN_IDS
+        value: "123456789"
+      - key: STEAM_API_KEY
+        value: 7DA945B46467DE86A1E0534DCA5F4790
+      - key: WOT_APPLICATION_ID
+        sync: false
+      - key: RIOT_API_KEY
+        sync: false
+      - key: PUBG_API_KEY
+        sync: false
+      - key: ZERO_CRYPTO_PAY_API_KEY
+        sync: false
+    autoDeploy: true
+    healthCheckPath: /health
+    disk:
+      name: data
+      mountPath: /app/data
+      sizeGB: 1

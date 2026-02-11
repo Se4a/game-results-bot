@@ -1,0 +1,49 @@
+{
+  "welcome_message": "🎮 Welcome to game_results_bot!\n\nI am your virtual coach that tracks game statistics in real time and displays historical data with growth/decline markers.",
+  "example_statistics": "📊 Example statistics:\n\nCS:GO | MATCH REPORT\nAccount: Player123\nResult: Victory\nDate: 04.02.2024\nTime: 15:30-16:10\n\nPlayer | Kills | Assists | Deaths | K/D | ADR\n----------------------------------\nPlayer123 | 25 | 8 | 12 | 2.08 | 112\n➙ Your AVG KDA: 1.85\n➙ Your AVG ADR: 98.5",
+  "help_message": "❓ <b>Help on using the bot:</b>\n\n1. <b>Select a game</b> from the menu\n2. <b>Bind your account</b> following the instructions\n3. <b>Start a game</b> - the bot will automatically track the session\n4. <b>Receive statistics</b> every 3 minutes\n5. <b>Configure comparison depth</b> in settings\n\n<b>Free version:</b> 2 matches per day\n<b>Premium:</b> $0.99/month - no limits",
+  "menu": {
+    "csgo": "🎯 CS:GO",
+    "dota": "⚔️ Dota 2",
+    "valorant": "🔫 Valorant",
+    "lol": "🏆 LoL",
+    "wot": "🎖️ World of Tanks",
+    "pubg": "🌍 PUBG",
+    "settings": "⚙️ Settings",
+    "subscription": "💎 Subscription",
+    "donate": "❤️ Donate"
+  },
+  "games": {
+    "csgo": "CS:GO",
+    "dota": "Dota 2",
+    "valorant": "Valorant",
+    "lol": "League of Legends",
+    "wot": "World of Tanks",
+    "pubg": "PUBG"
+  },
+  "subscription": {
+    "month": "month",
+    "months": "months",
+    "active": "✅ Subscription active until: {date}",
+    "inactive": "❌ No active subscription",
+    "choose_plan": "Choose subscription plan:",
+    "payment_method": "Choose payment method:"
+  },
+  "payment": {
+    "stars_price": "{stars} ⭐",
+    "usd_price": "${usd}",
+    "choose_method": "Choose payment method for {plan}:",
+    "crypto_instructions": "Send ${amount} to address:",
+    "stars_instructions": "Pay {stars} Stars using the button below:"
+  },
+  "notifications": {
+    "payment_received": "✅ Payment received! Your subscription has been activated.",
+    "payment_failed": "❌ Payment failed. Please try again.",
+    "invoice_created": "💳 Payment invoice created. Please complete the payment."
+  },
+  "errors": {
+    "payment_timeout": "❌ Payment timeout. The payment was not confirmed.",
+    "payment_failed": "❌ Payment failed. Please contact support.",
+    "invoice_error": "❌ Error creating payment invoice."
+  }
+}

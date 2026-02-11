@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: game_results_bot
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - DATABASE_URL=postgresql://postgres:password@postgres:5432/game_bot
+      - REDIS_URL=redis://redis:6379
+      - ADMIN_IDS=${ADMIN_IDS}
+      - STEAM_API_KEY=${STEAM_API_KEY}
+    volumes:
+      - ./logs:/app/logs
+      - ./database:/app/database
+    ports:
+      - "5000:5000"
+    command: python bot/main.py
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: game_bot_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: game_bot
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7-alpine
+    container_name: game_bot_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
