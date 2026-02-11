@@ -8,7 +8,7 @@ class Config:
     BOT_TOKEN = os.getenv("BOT_TOKEN", "*8335049265:AAGjWzldB1DV6nsdFwMekC_YZsEdtkrlzWc*")
     
     # Database
-    DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./database/bot.db")
+    DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://game_results_db_rh8i_user:WcpLWFAKnD7Ezcf9QAnQmYHq6FFXRb2p@dpg-d66de3ggjchc73d6jfjg-a/game_results_db_rh8i")
     
     # API Keys
     STEAM_API_KEY = os.getenv("STEAM_API_KEY", "*7DA945B46467DE86A1E0534DCA5F4790*")
@@ -21,7 +21,7 @@ class Config:
     ZERO_CRYPTO_PAY_API_KEY = os.getenv("ZERO_CRYPTO_PAY_API_KEY", "*your_zerocryptopay_key*")
     
     # Redis for caching and timers
-    REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
+    REDIS_URL = os.getenv("REDIS_URL", "redis://red-d66dgfi48b3s73a4kdo0:6379")
     
     # Limits
     FREE_MATCHES_PER_DAY = 2
