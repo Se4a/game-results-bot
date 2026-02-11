@@ -149,7 +149,7 @@ def get_stars_payment_keyboard(language: str = 'en', plan_type: str = None) -> I
     return keyboard
     
     def get_game_detailed_menu(game: str, language: str = 'en') -> InlineKeyboardMarkup:
-    """Меню с опциями детальной статистики"""    
+        """Меню с опциями детальной статистики"""    
     keyboard = InlineKeyboardMarkup(row_width=2)
     
     buttons = [
