@@ -5,7 +5,7 @@ import logging
 from bot.database import async_session
 from sqlalchemy import select, and_
 from bot.models.match import Match, MatchUpdate
-from services.extended_stats_collector import ExtendedStatsCollector
+from .extended_stats_collector import ExtendedStatsCollector
 
 logger = logging.getLogger(__name__)
 
