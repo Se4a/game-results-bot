@@ -1,4 +1,9 @@
-import openai
+try:
+    import openai
+    OPENAI_AVAILABLE = True
+except ImportError:
+    openai = None
+    OPENAI_AVAILABLE = False
 import json
 from typing import List, Dict, Optional
 from datetime import datetime
