@@ -1,3 +1,6 @@
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from bot.utils.localization import get_text
+
 def get_game_detailed_menu(game: str, language: str = 'en') -> InlineKeyboardMarkup:
     """Меню с опциями детальной статистики"""
     keyboard = InlineKeyboardMarkup(row_width=2)
@@ -27,3 +30,14 @@ def get_game_detailed_menu(game: str, language: str = 'en') -> InlineKeyboardMar
     
     keyboard.add(*buttons)
     return keyboard
+
+def get_csgo_menu(language: str = 'en') -> InlineKeyboardMarkup:
+    """Меню CS:GO"""
+    keyboard = InlineKeyboardMarkup(row_width=1)
+    keyboard.add(
+        InlineKeyboardButton("🔗 Привязать аккаунт", callback_data='bind_csgo'),
+        InlineKeyboardButton(get_text('back', language), callback_data='back_to_games')
+    )
+    return keyboard
+
+# Аналогично для других игр...
