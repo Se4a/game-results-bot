@@ -258,7 +258,7 @@ def get_notification_settings_keyboard(language: str, settings: dict) -> InlineK
             callback_data='set_notification_time'
         ),
         InlineKeyboardButton(
-            "🔕 Режим "Не беспокоить"",
+            "🔕 Режим 'Не беспокоить'",
             callback_data='toggle_do_not_disturb'
         )
     ]
